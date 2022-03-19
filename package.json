@@ -1,10 +1,10 @@
 {
   "name": "ssr-fetch",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "description": "SSR Fetch for Next JS",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
     "fetch"
   ],
   "author": "arn-ob",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
 }

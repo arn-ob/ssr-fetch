@@ -1,0 +1,16 @@
+{
+  "name": "ssr-fetch",
+  "version": "1.0.1",
+  "description": "SSR Fetch for Next JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ssr",
+    "next",
+    "fetch"
+  ],
+  "author": "arn-ob",
+  "license": "MIT"
+}

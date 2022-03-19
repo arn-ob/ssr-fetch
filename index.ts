@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param url /api/Post
+ * @param header Any Header you like
+ * @returns Object
+ */
 const rPost = async (url: string, data: any, header?: object) => {
     
     url = '/api' + url;
@@ -17,6 +23,12 @@ const rPost = async (url: string, data: any, header?: object) => {
 }
 
 
+/**
+ * 
+ * @param url /api/Get
+ * @param header Any Header you like
+ * @returns Object
+ */
 const rGet = async (url: string, header?: object) => {
     
     url = '/api' + url;
@@ -29,6 +41,13 @@ const rGet = async (url: string, header?: object) => {
     return res;
 }
 
+
+/**
+ * 
+ * @param url /api/Put
+ * @param header Any Header you like
+ * @returns Object
+ */
 const rPut = async (url: string, header?: object) => {
     
     url = '/api' + url;
@@ -41,6 +60,32 @@ const rPut = async (url: string, header?: object) => {
     return res;
 }
 
+
+/**
+ * 
+ * @param url /api/Patch
+ * @param header Any Header you like
+ * @returns Object
+ */
+const rPatch= async (url: string, header?: object) => {
+    
+    url = '/api' + url;
+    
+    let res = await (await fetch(url, {
+        method: "PATCH",
+        headers: { ...header }
+    })).json();
+    
+    return res;
+}
+
+
+/**
+ * 
+ * @param url /api/Delete
+ * @param header Any Header you like
+ * @returns Object
+ */
 const rDelete = async (url: string, header?: object) => {
     
     url = '/api' + url;
@@ -58,5 +103,6 @@ export {
     rPost,
     rGet,
     rPut,
+    rPatch,
     rDelete,
 }

@@ -1,6 +1,6 @@
 {
   "name": "ssr-fetch",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "SSR Fetch for Next JS",
   "main": "index.js",
   "scripts": {

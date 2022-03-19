@@ -104,5 +104,5 @@ export {
     rGet,
     rPut,
     rPatch,
-    rDelete,
+    rDelete
 }

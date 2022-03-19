@@ -20,5 +20,9 @@
     "fetch"
   ],
   "author": "arn-ob",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "ts-node": "^10.7.0"
+  }
 }

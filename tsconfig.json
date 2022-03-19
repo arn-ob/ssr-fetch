@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {    
+      "target": "es6",                         
+      "module": "amd",                    
+      "strict": true,                          
+      "noImplicitAny": true,                
+      "strictNullChecks": true,              
+      "strictPropertyInitialization": false
+    },
+    "exclude": [
+      "node_modules"
+    ]
+  }
+  

@@ -45,136 +45,141 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-define("index", ["require", "exports"], function (require, exports) {
+System.register("index", [], function (exports_1, context_1) {
     "use strict";
-    exports.__esModule = true;
-    exports.rDelete = exports.rPatch = exports.rPut = exports.rGet = exports.rPost = void 0;
-    /**
-     *
-     * @param url /api/Post
-     * @param header Any Header you like
-     * @returns Object
-     */
-    var rPost = function (url, data, header) { return __awaiter(void 0, void 0, void 0, function () {
-        var res, error_1;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    url = '/api' + url;
-                    _a.label = 1;
-                case 1:
-                    _a.trys.push([1, 4, , 5]);
-                    return [4 /*yield*/, fetch(url, {
-                            method: "POST",
-                            headers: __assign({}, header),
-                            body: JSON.stringify(data)
-                        })];
-                case 2: return [4 /*yield*/, (_a.sent()).json()];
-                case 3:
-                    res = _a.sent();
-                    return [2 /*return*/, res];
-                case 4:
-                    error_1 = _a.sent();
-                    return [2 /*return*/, error_1];
-                case 5: return [2 /*return*/];
-            }
-        });
-    }); };
-    exports.rPost = rPost;
-    /**
-     *
-     * @param url /api/Get
-     * @param header Any Header you like
-     * @returns Object
-     */
-    var rGet = function (url, header) { return __awaiter(void 0, void 0, void 0, function () {
-        var res;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    url = '/api' + url;
-                    return [4 /*yield*/, fetch(url, {
-                            method: "GET",
-                            headers: __assign({}, header)
-                        })];
-                case 1: return [4 /*yield*/, (_a.sent()).json()];
-                case 2:
-                    res = _a.sent();
-                    return [2 /*return*/, res];
-            }
-        });
-    }); };
-    exports.rGet = rGet;
-    /**
-     *
-     * @param url /api/Put
-     * @param header Any Header you like
-     * @returns Object
-     */
-    var rPut = function (url, header) { return __awaiter(void 0, void 0, void 0, function () {
-        var res;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    url = '/api' + url;
-                    return [4 /*yield*/, fetch(url, {
-                            method: "PUT",
-                            headers: __assign({}, header)
-                        })];
-                case 1: return [4 /*yield*/, (_a.sent()).json()];
-                case 2:
-                    res = _a.sent();
-                    return [2 /*return*/, res];
-            }
-        });
-    }); };
-    exports.rPut = rPut;
-    /**
-     *
-     * @param url /api/Patch
-     * @param header Any Header you like
-     * @returns Object
-     */
-    var rPatch = function (url, header) { return __awaiter(void 0, void 0, void 0, function () {
-        var res;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    url = '/api' + url;
-                    return [4 /*yield*/, fetch(url, {
-                            method: "PATCH",
-                            headers: __assign({}, header)
-                        })];
-                case 1: return [4 /*yield*/, (_a.sent()).json()];
-                case 2:
-                    res = _a.sent();
-                    return [2 /*return*/, res];
-            }
-        });
-    }); };
-    exports.rPatch = rPatch;
-    /**
-     *
-     * @param url /api/Delete
-     * @param header Any Header you like
-     * @returns Object
-     */
-    var rDelete = function (url, header) { return __awaiter(void 0, void 0, void 0, function () {
-        var res;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    url = '/api' + url;
-                    return [4 /*yield*/, fetch(url, {
-                            method: "DELETE",
-                            headers: __assign({}, header)
-                        })];
-                case 1: return [4 /*yield*/, (_a.sent()).json()];
-                case 2:
-                    res = _a.sent();
-                    return [2 /*return*/, res];
-            }
-        });
-    }); };
-    exports.rDelete = rDelete;
+    var rPost, rGet, rPut, rPatch, rDelete;
+    var __moduleName = context_1 && context_1.id;
+    return {
+        setters: [],
+        execute: function () {
+            /**
+             *
+             * @param url /api/Post
+             * @param header Any Header you like
+             * @returns Object
+             */
+            rPost = function (url, data, header) { return __awaiter(void 0, void 0, void 0, function () {
+                var res, error_1;
+                return __generator(this, function (_a) {
+                    switch (_a.label) {
+                        case 0:
+                            url = '/api' + url;
+                            _a.label = 1;
+                        case 1:
+                            _a.trys.push([1, 4, , 5]);
+                            return [4 /*yield*/, fetch(url, {
+                                    method: "POST",
+                                    headers: __assign({}, header),
+                                    body: JSON.stringify(data)
+                                })];
+                        case 2: return [4 /*yield*/, (_a.sent()).json()];
+                        case 3:
+                            res = _a.sent();
+                            return [2 /*return*/, res];
+                        case 4:
+                            error_1 = _a.sent();
+                            return [2 /*return*/, error_1];
+                        case 5: return [2 /*return*/];
+                    }
+                });
+            }); };
+            exports_1("rPost", rPost);
+            /**
+             *
+             * @param url /api/Get
+             * @param header Any Header you like
+             * @returns Object
+             */
+            rGet = function (url, header) { return __awaiter(void 0, void 0, void 0, function () {
+                var res;
+                return __generator(this, function (_a) {
+                    switch (_a.label) {
+                        case 0:
+                            url = '/api' + url;
+                            return [4 /*yield*/, fetch(url, {
+                                    method: "GET",
+                                    headers: __assign({}, header)
+                                })];
+                        case 1: return [4 /*yield*/, (_a.sent()).json()];
+                        case 2:
+                            res = _a.sent();
+                            return [2 /*return*/, res];
+                    }
+                });
+            }); };
+            exports_1("rGet", rGet);
+            /**
+             *
+             * @param url /api/Put
+             * @param header Any Header you like
+             * @returns Object
+             */
+            rPut = function (url, header) { return __awaiter(void 0, void 0, void 0, function () {
+                var res;
+                return __generator(this, function (_a) {
+                    switch (_a.label) {
+                        case 0:
+                            url = '/api' + url;
+                            return [4 /*yield*/, fetch(url, {
+                                    method: "PUT",
+                                    headers: __assign({}, header)
+                                })];
+                        case 1: return [4 /*yield*/, (_a.sent()).json()];
+                        case 2:
+                            res = _a.sent();
+                            return [2 /*return*/, res];
+                    }
+                });
+            }); };
+            exports_1("rPut", rPut);
+            /**
+             *
+             * @param url /api/Patch
+             * @param header Any Header you like
+             * @returns Object
+             */
+            rPatch = function (url, header) { return __awaiter(void 0, void 0, void 0, function () {
+                var res;
+                return __generator(this, function (_a) {
+                    switch (_a.label) {
+                        case 0:
+                            url = '/api' + url;
+                            return [4 /*yield*/, fetch(url, {
+                                    method: "PATCH",
+                                    headers: __assign({}, header)
+                                })];
+                        case 1: return [4 /*yield*/, (_a.sent()).json()];
+                        case 2:
+                            res = _a.sent();
+                            return [2 /*return*/, res];
+                    }
+                });
+            }); };
+            exports_1("rPatch", rPatch);
+            /**
+             *
+             * @param url /api/Delete
+             * @param header Any Header you like
+             * @returns Object
+             */
+            rDelete = function (url, header) { return __awaiter(void 0, void 0, void 0, function () {
+                var res;
+                return __generator(this, function (_a) {
+                    switch (_a.label) {
+                        case 0:
+                            url = '/api' + url;
+                            return [4 /*yield*/, fetch(url, {
+                                    method: "DELETE",
+                                    headers: __assign({}, header)
+                                })];
+                        case 1: return [4 /*yield*/, (_a.sent()).json()];
+                        case 2:
+                            res = _a.sent();
+                            return [2 /*return*/, res];
+                    }
+                });
+            }); };
+            exports_1("rDelete", rDelete);
+        }
+    };
 });

@@ -1,11 +1,19 @@
 {
   "name": "ssr-fetch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "SSR Fetch for Next JS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arn-ob/ssr-fetch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arn-ob/ssr-fetch/issues"
+  },
+  "homepage": "https://github.com/arn-ob/ssr-fetch#readme",
   "keywords": [
     "ssr",
     "next",

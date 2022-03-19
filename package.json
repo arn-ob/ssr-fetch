@@ -1,6 +1,6 @@
 {
   "name": "ssr-fetch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "SSR Fetch for Next JS",
   "main": "index.js",
   "scripts": {
@@ -20,9 +20,5 @@
     "fetch"
   ],
   "author": "arn-ob",
-  "license": "MIT",
-  "dependencies": {
-    "prop-types": "^15.8.1",
-    "ts-node": "^10.7.0"
-  }
+  "license": "MIT"
 }

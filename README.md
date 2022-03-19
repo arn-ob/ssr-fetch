@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SSR Fetch based Next JS.
+SSR Fetch based on Next JS.
 
 ## Installation
 

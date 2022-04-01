@@ -23,5 +23,8 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "axios": "^0.26.1"
   }
 }
